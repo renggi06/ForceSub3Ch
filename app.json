@@ -1,0 +1,102 @@
+{
+  "name": "TG File Sharing Bot",
+  "description": "file sharing bot store posts and it can access by special links",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
+  "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "1978038952"
+    },
+    "APP_ID":{
+      "description": "your app id, take it from my.telegram.org",
+      "value": "2455700"
+    },
+    "API_HASH":{
+      "description": "your api hash, take it from my.telegram.org",
+      "value": "4df063060c61a938d223e6c19c8aa08e"
+    },
+    "CHANNEL_ID":{
+      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "value": "-1001558129321"
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "value": "-1001440462089"
+    },
+    "FORWARD_ID": {
+            "description": "fill with the mongodb url you get from cloud.mongodb.com",
+            "required": true,
+            "value": ""
+        },
+    "FORCE_SUB_GROUP":{
+      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "value": "-1001348778768"
+    },
+    "FORCE_SUB_VIRAL":{
+      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "value": "-1001219615847"
+    },
+    "START_MESSAGE": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+    },
+      "CPT_SATU": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "💋 𝘼𝙣𝙖𝙩𝙝𝙚𝙢𝙖 𝙍𝙖𝙩𝙚"    
+   },
+      "CPT_DUA": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "📺 𝘼𝙣𝙖𝙩𝙝𝙚𝙢𝙖 𝘽𝙤𝙠𝙚𝙥"    
+   },
+   "CPT_TIGA": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "🔞 𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥 𝙎𝙖𝙣𝙜𝙚"    
+   },
+      "START_IMG": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "https://media4.giphy.com/media/xT9IgA5X6o072yGhPi/giphy.gif"    
+   }, 
+    "URL_VIRAL": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "https://t.me/VIDEOVIRAL_TV"    
+    }, 
+    "URL_GROUP": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "value": "https://t.me/NEGATIVESPACE_ID"    
+    }, 
+    "ADMINS": {
+      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "value": "1054834409 1229638814",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
