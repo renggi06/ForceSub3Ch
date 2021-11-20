@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Ops Telah terjadi kesalahan..!")
+            await message.reply_text("Telah terjadi kesalahan..!")
             return
         await temp_msg.delete()
 
@@ -90,19 +90,19 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(CPT_SATU, url= client.invitelink)
+                    InlineKeyboardButton(CPT_CHANNEL UTAMA, url= client.invitelink)
      
                 ],
                 [
-                    InlineKeyboardButton(CPT_DUA, url= URL_VIRAL)
+                    InlineKeyboardButton(CPT_RATE, url= URL_RATE)
      
                 ],
                 [ 
-                   InlineKeyboardButton(CPT_TIGA, url=URL_GROUP)
+                   InlineKeyboardButton(CPT_GROUP, url=URL_GROUP)
                 ],
 
                 [
-                   InlineKeyboardButton("𝘼𝙪𝙩𝙝𝙤𝙧 𝘽𝙤𝙩", url=f"https://t.me/imgoriorio")
+                   InlineKeyboardButton("𝙊𝙒𝙉𝙀𝙍 𝘽𝙊𝙏", url=f"https://t.me/imgoriorio")
                 ]
                 
             ]
@@ -122,14 +122,14 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_join(client: Client, message: Message):
-    text = "<b>Hai Untuk menggunakan bot ini Lo wajib bergabung pada channel (porn/viral) dan group dibawah ini</b>"
+    text = "<b>Hai Untuk Dapat Mengakses File Bot ini Kamu Wajib Bergabung Pada Channel dan Group Dibawah ini</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
-        text = text + f" <b>Setelah itu silahkan mulai ulang tekan tulisan biru ini <a href='https://t.me/{client.username}?start={argument}'>Ulang</a></b>"
+        text = text + f" <b>Setelah itu silahkan mulai ulang tekan tulisan biru ini <a href='https://t.me/{client.username}?start={argument}'>Coba Lagi</a></b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙋𝙤𝙧𝙣", url = client.invitelink), InlineKeyboardButton("𝙂𝙧𝙤𝙪𝙥 𝙎𝙖𝙣𝙜𝙚", url= URL_GROUP)], [InlineKeyboardButton("𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙑𝙞𝙧𝙖𝙡", url = URL_VIRAL) ]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙐𝙏𝘼𝙈𝘼", url = client.invitelink), InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙍𝘼𝙏𝙀", url= URL_RATE)], [InlineKeyboardButton("𝙂𝙍𝙊𝙐𝙋 𝙀𝙉𝘼𝙆", url = URL_GROUP) ]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
