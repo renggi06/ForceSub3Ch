@@ -52,7 +52,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 #force sub channel id, if you want enable force sub
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
-VIP = int(os.environ.get("VIP", ""))
+VIP = int(os.environ.get("VIP", "1972014814"))
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_VIRAL = int(os.environ.get("FORCE_SUB_VIRAL", "0"))
