@@ -32,7 +32,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", " storykomik")
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", " nzid")
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "a7daab5a-7a59-484d-b078-34b60cb5be2b")
 HEROKU_URL = fetch_heroku_git_url(HEROKU_API_KEY, HEROKU_APP_NAME)
 
@@ -44,7 +44,7 @@ MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://group:group@cluster0.eycj
 
 BITLY_KEY = os.environ.get("BITLY_KEY", "d44dd0ba235e57d7ab935030c0e1c390c5ea71c0 ")
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "AnathemaVibesBot ")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "NZID3BOT")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -52,7 +52,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 #force sub channel id, if you want enable force sub
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
-VIP = int(os.environ.get("VIP", "1783910895"))
+VIP = int(os.environ.get("VIP", ""))
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_VIRAL = int(os.environ.get("FORCE_SUB_VIRAL", "0"))
@@ -62,17 +62,17 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #start image
 START_IMG = os.environ.get("START_IMG", " ") 
 #url tiga
-URL_TIGA = os.environ.get("URL_TIGA", "https://t.me/joinchat/1ds536uYYwg3YjBl") 
+URL_TIGA = os.environ.get("URL_TIGA", "") 
 #CAPTION
-CPT_SATU= os.environ.get("CPT_SATU", "💋 𝘼𝙣𝙖𝙩𝙝𝙚𝙢𝙖 𝙍𝙖𝙩𝙚") 
+CPT_SATU= os.environ.get("CPT_SATU", "𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙐𝙏𝘼𝙈𝘼") 
 #CAPTION
-CPT_DUA= os.environ.get("CPT_DUA", "📺 𝘼𝙣𝙖𝙩𝙝𝙚𝙢𝙖 𝘽𝙤𝙠𝙚𝙥") 
+CPT_DUA= os.environ.get("CPT_DUA", "𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙍𝘼𝙏𝙀") 
 #CAPTION
-CPT_TIGA= os.environ.get("CPT_TIGA", "🔞 𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥 𝙎𝙖𝙣𝙜𝙚") 
+CPT_TIGA= os.environ.get("CPT_TIGA", "𝙂𝙍𝙊𝙐𝙋 𝙀𝙉𝘼𝙆") 
 #CAPTION
-CPT_EMPAT= os.environ.get("CPT_EMPAT", "🛠 𝘼𝙪𝙩𝙝𝙤𝙧 𝘽𝙤𝙩") 
+CPT_EMPAT= os.environ.get("CPT_EMPAT", "𝙊𝙒𝙉𝙀𝙍 𝘽𝙊𝙏") 
 #url tiga
-URL_DUA = os.environ.get("URL_DUA", "https://t.me/VIDEOVIRAL_TV") 
+URL_DUA = os.environ.get("URL_DUA", "") 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
@@ -95,7 +95,7 @@ else:
     DISABLE_CHANNEL_BUTTON = False
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append()
 
 LOG_FILE_NAME = "CatatanBot.txt"
 
