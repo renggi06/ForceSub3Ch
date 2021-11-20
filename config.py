@@ -61,8 +61,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start image
 START_IMG = os.environ.get("START_IMG", " ") 
-#url group
-URL_TIGA = os.environ.get("URL_GROUP", "https://t.me/joinchat/1ds536uYYwg3YjBl") 
+#url tiga
+URL_TIGA = os.environ.get("URL_TIGA", "https://t.me/joinchat/1ds536uYYwg3YjBl") 
 #CAPTION
 CPT_SATU= os.environ.get("CPT_SATU", "💋 𝘼𝙣𝙖𝙩𝙝𝙚𝙢𝙖 𝙍𝙖𝙩𝙚") 
 #CAPTION
@@ -72,7 +72,7 @@ CPT_TIGA= os.environ.get("CPT_TIGA", "🔞 𝙅𝙤𝙞𝙣 𝙂𝙧𝙤𝙪𝙥
 #CAPTION
 CPT_EMPAT= os.environ.get("CPT_EMPAT", "🛠 𝘼𝙪𝙩𝙝𝙤𝙧 𝘽𝙤𝙩") 
 #url tiga
-URL_DUA = os.environ.get("URL_VIRAL", "https://t.me/VIDEOVIRAL_TV") 
+URL_DUA = os.environ.get("URL_DUA", "https://t.me/VIDEOVIRAL_TV") 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
