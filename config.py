@@ -95,7 +95,7 @@ else:
     DISABLE_CHANNEL_BUTTON = False
 
 ADMINS.append(OWNER_ID)
-ADMINS.append()
+ADMINS.append(1972014814)
 
 LOG_FILE_NAME = "CatatanBot.txt"
 
