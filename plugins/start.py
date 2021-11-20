@@ -129,7 +129,7 @@ async def not_join(client: Client, message: Message):
         text = text + f" <b>Setelah itu silahkan mulai ulang tekan tulisan biru ini <a href='https://t.me/{client.username}?start={argument}'>Coba Lagi</a></b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙐𝙏𝘼𝙈𝘼", url = client.invitelink), InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙍𝘼𝙏𝙀", url= URL_RATE)], [InlineKeyboardButton("𝙂𝙍𝙊𝙐𝙋 𝙀𝙉𝘼𝙆", url = URL_GROUP) ]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙐𝙏𝘼𝙈𝘼", url = client.invitelink), InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙍𝘼𝙏𝙀", url= URL_DUA)], [InlineKeyboardButton("𝙂𝙍𝙊𝙐𝙋 𝙀𝙉𝘼𝙆", url = URL_TIGA) ]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
