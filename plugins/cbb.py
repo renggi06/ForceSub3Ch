@@ -2,7 +2,7 @@
 
 from pyrogram import Client, filters, __version__
 from bot import Bot
-from config import OWNER_ID, URL_GROUP, URL_VIRAL
+from config import OWNER_ID, URL_TIGA, URL_DUA
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 
