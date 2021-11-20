@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
                 ],
 
                 [
-                   InlineKeyboardButton("🛠 𝘼𝙪𝙩𝙝𝙤𝙧 𝘽𝙤𝙩", url=f"https://t.me/Hyoneechan")
+                   InlineKeyboardButton("𝘼𝙪𝙩𝙝𝙤𝙧 𝘽𝙤𝙩", url=f"https://t.me/imgoriorio")
                 ]
                 
             ]
