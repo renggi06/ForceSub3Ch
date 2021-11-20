@@ -66,11 +66,11 @@
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "https://media4.giphy.com/media/xT9IgA5X6o072yGhPi/giphy.gif"    
    }, 
-    "URL_VIRAL": {
+    "URL_DUA": {
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "https://t.me/VIDEOVIRAL_TV"    
     }, 
-    "URL_GROUP": {
+    "URL_TIGA": {
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "https://t.me/NEGATIVESPACE_ID"    
     }, 
