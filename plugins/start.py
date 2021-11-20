@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
 
 from bot import Bot
-from config import ADMINS, FORCE_MSG, URL_GROUP, URL_VIRAL, CPT_SATU, START_MSG, CPT_DUA, OWNER_ID, CPT_TIGA, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, START_IMG
+from config import ADMINS, FORCE_MSG, URL_TIGA, URL_DUA, CPT_SATU, START_MSG, CPT_DUA, OWNER_ID, CPT_TIGA, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, START_IMG
 from helper_func import subscribed, subscriber, subscribe, encode, decode, get_messages
 from database.support import users_info
 from database.sql import add_user, query_msg
@@ -90,15 +90,15 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(CPT_CHANNEL UTAMA, url= client.invitelink)
+                    InlineKeyboardButton(CPT_SATU, url= client.invitelink)
      
                 ],
                 [
-                    InlineKeyboardButton(CPT_RATE, url= URL_RATE)
+                    InlineKeyboardButton(CPT_DUA, url= URL_DUA)
      
                 ],
                 [ 
-                   InlineKeyboardButton(CPT_GROUP, url=URL_GROUP)
+                   InlineKeyboardButton(CPT_TIGA, url=URL_TIGA)
                 ],
 
                 [
